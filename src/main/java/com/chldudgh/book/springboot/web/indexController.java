@@ -26,7 +26,7 @@ public class indexController {
         model.addAttribute("posts", postsService.findAllDesc());
 
         if (user != null) {
-            model.addAttribute("userName", user.getClass());
+            model.addAttribute("oauthUser", user.getClass());
         }
         return "index";
     }
