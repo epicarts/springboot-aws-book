@@ -15,13 +15,5 @@
 hs_err_pid*
 application-oauth.properties
 application-real-db.properties
-build/generated/
-build/reports/
-build/resources/main/application.properties
-build/resources/main/js/
-build/resources/main/static/
-build/resources/main/templates/
-build/resources/test/
-build/test-results/
-build/tmp/
-
+build/*
+src/main/resources/js/
