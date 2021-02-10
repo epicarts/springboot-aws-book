@@ -14,3 +14,15 @@
 *.rar
 hs_err_pid*
 application-oauth.properties
+application-real-db.properties
+build/generated/
+build/reports/
+build/resources/main/application.properties
+build/resources/main/js/
+build/resources/main/static/
+build/resources/main/templates/
+build/resources/test/
+build/test-results/
+build/tmp/
+src/main/resources/js/
+src/test/java/com/chldudgh/book/springboot/web/HelloControllerTest.java
