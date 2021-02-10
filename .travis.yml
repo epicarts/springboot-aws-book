@@ -27,7 +27,17 @@ deploy:
     region: ap-northeast-2
     skip_cleanup: true
     acl: private
-    local_dir: deploy #before_deploy에서 생성한 디렉토리. 해당 파일들만 S3로 전송
+    local_dir: deploy #before_deploy에서 생성한 디렉토리. 해당 파일들만 S3로 전
+    wait-until-deployed: true
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: epicarts-springboot-build
+    key: springboot2-webservice.zip #S3 버킷
+    bundle_type: zip # 압축 확장자
+    application: springboot2-webservice #AWS에서 등록한 CodeDeploy 어플리케이션
+    deployment_group: springboot2-webservice-group # AWS에서 등록한 codeDeploy 배포 그룹
+    region: ap-northeast-2
     wait-until-deployed: true
 
 # CI 실행 완료시 메일로 알람
