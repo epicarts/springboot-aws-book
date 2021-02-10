@@ -24,5 +24,4 @@ build/resources/main/templates/
 build/resources/test/
 build/test-results/
 build/tmp/
-src/main/resources/js/
-src/test/java/com/chldudgh/book/springboot/web/HelloControllerTest.java
+
